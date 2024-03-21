@@ -79,7 +79,7 @@ class DBStorage:
         """retreive one object"""
         big_dict = self.all(cls)
         for obj in big_dict.values():
-            if id == str(obj.id):
+            if id == obj.id:
                 return obj
         return None
 
